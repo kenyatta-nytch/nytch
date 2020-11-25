@@ -9,7 +9,7 @@ function toggleMode(){
 
 async function getQuote(){
     try{
-        const response = await fetch('http://quotes.stormconsultancy.co.uk/random.json');
+        const response = await fetch('https://quotes.stormconsultancy.co.uk/random.json');
         const data = await response.json();
         return data;
 
