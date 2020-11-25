@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class=''>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenn Nytch</title>
+    <link rel="icon" href="public/images/code.png">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <script src="https://kit.fontawesome.com/c83844968c.js" crossorigin="anonymous"></script>
+</head>
+<body class='flex flex-col h-screen dark:bg-gray-800'>
+    <header class='fixed t-0 inset-x-0 px-4 py-2 shadow-lg'>
+        <nav class='flex justify-between'>
+            <p class='text-gray-900 dark:text-white text-3xl'>Kenn nytch</p>
+            <div class='flex justify-center items-center'>
+                <a href='https://twitter.com/ken_nytch'>
+                    <i class="fab fa-twitter text-2xl mx-1 text-gray-900 dark:text-white transition duration-300 linear hover:text-blue-500 dark:hover:text-blue-500"></i></a>
+                <a href='https://github.com/kenyatta-nytch'>
+                    <i class="fab fa-github-alt text-2xl mx-1 text-gray-900 dark:text-white transition duration-300 linear hover:text-gray-700 dark:hover:text-gray-700"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main class='flex-1 flex w-full'>
+        <div class='flex-1 flex justify-center items-center'>
+            <div class='p-3 max-w-md'>
+                <p id='quote' class='text-center mb-2 text-gray-900 dark:text-gray-100 text-lg lg:text-xl'>Intricate Lucid.</p>
+                <p id='author' class='text-right mt-2 text-gray-600 dark:text-gray-400 lg:text-lg'>Kenn Nytch</p>
+            </div>
+        </div>
+        <div class='flex-1 lg:flex justify-center items-center hidden'>
+            <div class='rounded-xl shadow-xl transform hover:shadow-2xl hover:scale-101 transition duration-500 ease-in-out' style="width:400px">
+                <img class='rounded-xl filter-none dark:filter-grayscale' src="public/images/profile.jpg" />
+            </div>
+        </div>
+    </main>
+    <footer class='px-4 py-2'>
+        <i onclick='toggleMode()' class='fas fa-heart dark:text-white text-lg cursor-pointer'></i>
+    </footer>
+</body>
+<script async src="./public/js/index.js"></script>
+</html>

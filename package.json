@@ -1,0 +1,18 @@
+{
+  "name": "nytch",
+  "version": "1.0.0",
+  "description": "Something simple with tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss public/css/index.css -o public/css/tailwind.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nytch",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
