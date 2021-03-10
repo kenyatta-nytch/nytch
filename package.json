@@ -4,7 +4,7 @@
   "description": "Something simple with tailwindcss",
   "main": "index.js",
   "scripts": {
-    "build": "postcss public/css/index.css -o public/css/tailwind.css",
+    "build": "postcss lib/css/index.css -o lib/css/tailwind.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nytch",

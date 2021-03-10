@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenn Nytch</title>
     <link rel="icon" href="public/images/code.png">
-    <link rel="stylesheet" href="public/css/tailwind.css">
+    <link rel="stylesheet" href="lib/css/tailwind.css">
     <script src="https://kit.fontawesome.com/c83844968c.js" crossorigin="anonymous"></script>
 </head>
 <body class='flex flex-col h-screen dark:bg-gray-800'>
@@ -21,21 +21,31 @@
         </nav>
     </header>
     <main class='flex-1 flex w-full'>
-        <div class='flex-1 flex justify-center items-center'>
-            <div class='p-3 max-w-md'>
-                <p id='quote' class='text-center mb-2 text-gray-900 dark:text-gray-100 text-lg lg:text-xl'>Intricate Lucid.</p>
-                <p id='author' class='text-right mt-2 text-gray-600 dark:text-gray-400 lg:text-lg'>Kenn Nytch</p>
+        <section class='flex-1 flex justify-center items-center'>
+            <div id="quote-area" class='bg-gray-100 relative' style="width:600px;height:450px;">
+                <div id="quote-1" class='p-1 w-80 absolute bg-white shadow-md' style="transition:1s ease-in-out;">
+                    <p id='quote' class='mb-1 text-gray-900 dark:text-gray-100'>Intricate Lucid.</p>
+                    <p id='author' class='mt-1 text-gray-600 dark:text-gray-400'>Kenn Nytch</p>
+                </div>
+                <div id="quote-2" class='p-1 w-80 absolute bg-white shadow-md' style="transition:1s ease-in-out;">
+                    <p id='quote' class='mb-1 text-gray-900 dark:text-gray-100'>Yin-Yang.</p>
+                    <p id='author' class='mt-1 text-gray-600 dark:text-gray-400'>Blvk Wyte</p>
+                </div>
+                <div id="quote-3" class='p-1 w-80 absolute bg-white shadow-md' style="transition:1s ease-in-out;">
+                    <p id='quote' class='mb-1 text-gray-900 dark:text-gray-100'>Good Vibez.</p>
+                    <p id='author' class='mt-1 text-gray-600 dark:text-gray-400'>Crispy Frost</p>
+                </div>
             </div>
-        </div>
-        <div class='flex-1 lg:flex justify-center items-center hidden'>
+        </section>
+        <section class='flex-1 lg:flex justify-center items-center hidden'>
             <div class='rounded-xl shadow-xl transform hover:shadow-2xl hover:scale-101 transition duration-500 ease-in-out' style="width:400px">
                 <img class='rounded-xl filter-none dark:filter-grayscale' src="public/images/profile.jpg" />
             </div>
-        </div>
+        </section>
     </main>
     <footer class='px-4 py-2'>
         <i onclick='toggleMode()' class='fas fa-heart dark:text-white text-lg cursor-pointer'></i>
     </footer>
 </body>
-<script async src="./public/js/index.js"></script>
+<script async src="lib/js/index.js"></script>
 </html>
