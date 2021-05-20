@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  /* width: 100vw; */
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-image {
+  font-family: 'Poppins', sans-serif;
+  line-height: 14px;
+  background: url("https://kenyatta-nytch.github.io/nytch/assets/images/profile.jpg");
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+}
